@@ -1,0 +1,44 @@
+.container {
+  img {
+    margin: 5vh auto;
+    margin-left: calc(50% - 75px);
+    text-align: center;
+  }
+
+  .container-text {
+    background-color: #FBBC04;
+    padding: 1.3rem;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  input {
+    width: 100%;
+    margin: 1vh 0;
+  }
+
+  .btn-login {
+    background-color: #FBBC04;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.3em;
+    margin: 2vh 0;
+  }
+
+  .full-width-input,
+  button {
+    width: 100%;
+  }
+
+  .separator {
+    margin-bottom: 2rem;
+  }
+}

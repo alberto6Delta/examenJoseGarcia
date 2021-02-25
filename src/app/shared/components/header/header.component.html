@@ -1,0 +1,42 @@
+<nav class="navbar-expand-lg navbar-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a class="navbar-brand" href="#">
+    <img src="https://via.placeholder.com/150x40" alt="">
+  </a>
+
+  <i class="fas fa-bell navbar-brand float-right mt-3"></i>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <i class="fas fa-home d-inline mr-3"></i>
+        <a class="nav-link d-inline" routerLink="/">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <i class="fas fa-list d-inline mr-3"></i>
+        <a class="nav-link d-inline" (click)="reload()">Mis tareas</a>
+      </li>
+      <li class="nav-item">
+        <i class="fas fa-truck-moving d-inline mr-3"></i>
+        <a class="nav-link d-inline" (click)="reload()">Tracking</a>
+      </li>
+      <li class="nav-item">
+        <i class="fas fa-chart-pie d-inline mr-3"></i>
+        <a class="nav-link d-inline" (click)="reload()">Graficos</a>
+      </li>
+      <li *ngIf="!isAdmin;">
+        <i class="fas fa-sign-in-alt d-inline mr-3"></i>
+        <a class="nav-link d-inline" routerLink="/login">Login</a>
+      </li>
+      <li *ngIf="isAdmin;" class="nav-item">
+        <i class="fas fa-sign-out-alt d-inline mr-3"></i>
+        <a class="nav-link d-inline" (click)="onLogout()">Cerrar sesión</a>
+      </li>
+    </ul>
+  </div>
+</nav>

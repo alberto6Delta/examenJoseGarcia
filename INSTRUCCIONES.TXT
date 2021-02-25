@@ -1,0 +1,32 @@
+Hola equipo de 6delta aquí les dejo las instrucciones del proyecto.
+
+Para crear la base de datos:
+La base de datos debe llamarse "user",
+Con una tabla llamada "users",
+y con los siguiente campos:
+    username
+    password
+    role
+    id
+En la raíz del proyecto les dejé un script que la genera automáticamente el archivo se llama:
+"users.sql"
+
+
+
+Para iniciar los servidores:
+1.- Navegar hasta el proyecto.
+2.- Correr el comando "npm update" para instalar todas las dependencias necesarias.
+3.- Correr el comando "ng s" para correr el proyecto en local.
+4.- Abrir otra terminal y navegar a la carpeta back-end.
+5.- Correr el comando "npm update" para instalar todas las dependencias necesarias.
+6.- Correr el comando "npm run dev" para iniciar el servidor node js del API
+
+En este punto ya tendran 2 servidores corriendo en localhost 
+uno en: http://localhost:4200/  <- Es la aplicación angular
+y otro en: http://localhost:3000/ <- Es la API en Node js.
+
+
+
+Para probar el API desde postman:
+En la raíz del proyecto les dejé la colección de peticiones para que solo las importen y puedan 
+testear. El archivo se llama "6delta.postman_collection.json"

@@ -1,0 +1,35 @@
+.container-misTareas,
+.container-tracking,
+.container-graficos {
+  height: 20vh;
+  width: 60vw;
+  margin: 5vh 20vw;
+  background-color: #FBBC04;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: none;
+
+  p {
+    font-size: 2em;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 1em;
+  }
+
+  i {
+    font-size: 5em;
+  }
+}
+
+
+.atajo{
+    display: inline;
+    width: 50%;
+    border: none;
+    color: gray;
+    height: 40px;
+    background-color: honeydew;
+}
